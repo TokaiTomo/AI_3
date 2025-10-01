@@ -5,23 +5,17 @@ point_4 = float(input("Please input your fourth score: "))
 point_5 = float(input("Please input your fifth score: "))
 total = (point_1+point_2+point_3+point_4+point_5)
 avg = total/5
-if avg == 100:
+if avg == 100 and avg >= 91:
     print("A+")
-elif avg >= 95 and avg<= 99:
+elif avg >= 81 and avg<= 90:
     print("A")
-elif avg >= 90 and avg<=94:
+elif avg >= 71 and avg<=80:
     print("A-")
-elif avg >= 88 and avg<=89:
+elif avg >= 61 and avg<=70:
     print("B+")
-elif avg >= 84 and avg<=87:
+elif avg >= 51 and avg<=60:
     print("B")
-elif avg >= 80 and avg<=83:
+elif avg >= 41 and avg<=50:
     print("B-")
-elif avg >= 78 and avg<=79:
-    print("C+")
-elif avg >= 74 and avg<=77:
-    print("C")
-elif avg >= 70 and avg<=73:
-    print("C-")
 else:
-    print("F")
+    print("C")
