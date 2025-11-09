@@ -1,3 +1,14 @@
+choice = int(input("""
+Choose a calculation
+=========================
+1.addition
+2.subtraction
+3.multplication
+4.division
+-------------------------
+Enter your choice: """))
+a = int(input("Enter number 1: "))
+b = int(input("Enter number 2: "))
 def add(p,q):
     ans=p+q
     return ans
@@ -10,7 +21,13 @@ def mult(p,q):
 def divide(p,q):
     ans = p/q
     return ans
-add(1,2)
-sub(10,3)
-mult(2,4)
-divide(55,11)
+if choice == 1:
+    print(add(a,b))
+elif choice == 2:
+    print(sub(a,b))
+elif choice == 3:
+    print(mult(a,b))
+elif choice == 4:
+    print(divide(a,b))
+else:
+    print("Not a choice")
