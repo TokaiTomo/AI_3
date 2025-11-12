@@ -7,8 +7,8 @@ Choose a calculation
 4.division
 -------------------------
 Enter your choice: """))
-a = int(input("Enter number 1: "))
-b = int(input("Enter number 2: "))
+a = int(input("Enter the first number: "))
+b = int(input("Enter the seconnd number: "))
 def add(p,q):
     ans=p+q
     return ans
